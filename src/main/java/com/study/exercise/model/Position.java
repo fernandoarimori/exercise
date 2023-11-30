@@ -24,4 +24,5 @@ public class Position {
         pk.setCategory(category);
         this.place = place;
     }
+
 }

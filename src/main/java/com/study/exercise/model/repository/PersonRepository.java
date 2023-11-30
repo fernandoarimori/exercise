@@ -2,6 +2,7 @@ package com.study.exercise.model.repository;
 
 import com.study.exercise.model.FindByCategoryRecord;
 import com.study.exercise.model.Person;
+import com.study.exercise.model.Position;
 import com.study.exercise.model.projection.PersonProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
