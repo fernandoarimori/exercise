@@ -34,8 +34,7 @@ public class PersonService {
         var cat = personWeightSet(dto.weight());
         var newPerson = personRepository.save(toSafe);
         Integer allPerson = Math.toIntExact(personRepository.count());
-        var place = allPerson++;
-        System.out.println(allPerson + " " + place);
+        var place = positionRepository.countFromCat(cat.getId());
         Position newPosition = new Position(newPerson, cat, place);
         positionRepository.save(newPosition);
         return new PersonResponseDTO(toSafe);
